@@ -1,0 +1,20 @@
+<% #image = image to be rendered
+   #links_to = if not nil, the image will link to this
+   image = image||@image
+   vote_percentage = image.vote_cache ? ((image.vote_cache / Image.all_votes.length) * 100).floor : 0
+
+%>
+<div style="text-align: center">
+<div style="display: inline-block;">
+     <%= image_tag(image.url('thumb')) %>
+      <div class="vote-meter">
+        <div  id="vote_meter_bar_<%=image.id%>" class="vote-meter-bar" role="progressbar" style="width: <%=vote_percentage%>%">
+        </div>
+      </div>
+</div>
+  <div class="image_vote_links_container">
+  <%= render(:partial => 'image/image_vote_links', :locals => {
+                                                   :image => image
+                                           }) %>
+  </div>
+</div>
