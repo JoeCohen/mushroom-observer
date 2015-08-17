@@ -6,7 +6,7 @@ class ApplicationHelperTest < ActionView::TestCase
     assert_equal("/abcdef?foo=bar&this=that",
                  add_args_to_url("/abcdef", foo: "bar", this: "that"))
     assert_equal("/abcdef?foo=bar&this=that",
-                 add_args_to_url('/abcdef?foo=wrong', foo: "bar", this: "that"))
+                 add_args_to_url("/abcdef?foo=wrong", foo: "bar", this: "that"))
     assert_equal("/abcdef?a=2&foo=%22bar%22&this=that",
                  add_args_to_url("/abcdef?foo=wrong&a=2", foo: '"bar"',
                                  this: "that"))

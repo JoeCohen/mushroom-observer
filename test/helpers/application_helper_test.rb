@@ -3,9 +3,10 @@ require "test_helper"
 # test the methods in application_helper
 class ApplicationHelperTest < ActionView::TestCase
   def test_textile_markup_should_be_escaped
-  	textile = "**Bold**"
-  	escaped = "&lt;div class=&quot;textile&quot;&gt;&lt;p&gt;&lt;b&gt;Bold&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"
-		assert_equal escaped, escape_html(textile.tpl)
+    textile = "**Bold**"
+    escaped = "&lt;div class=&quot;textile&quot;&gt;&lt;p&gt;&lt;b&gt;Bold"\
+              "&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"
+    assert_equal escaped, escape_html(textile.tpl)
   end
 
   def test_observation_title
@@ -27,7 +28,7 @@ class ApplicationHelperTest < ActionView::TestCase
     observation = Observation.find(5)
     title = observation_title(observation)
 
-    assert(title.end_with?("(#{observation.id})"),
-      "Title of specimenless Observation should end with id in parens")
+    error_msg = "Title of specimenless Observation should end with id in parens"
+    assert(title.end_with?("(#{observation.id})"), error_msg)
   end
 end
