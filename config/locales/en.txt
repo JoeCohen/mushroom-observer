@@ -1739,6 +1739,7 @@
   show_observation_hide_map: Hide thumbnail map.
   show_observation_thumbnail_map_hidden: Thumbnail map hidden.  To re-enable this feature, go to your "[:app_preferences]":/account/prefs page.
   show_observation_create_specimen: Add Herbarium Specimen
+  show_observation_herbarium_labels: Herbarium Labels
 
   # location/show_past_location
   show_past_location_title: "[:VERSION] [num]: [name]"

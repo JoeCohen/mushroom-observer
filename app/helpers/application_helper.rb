@@ -35,16 +35,23 @@ module ApplicationHelper
 	def observation_title(observation)
     title = :show_observation_title.t(name: observation.unique_format_name)
     if observation.specimen
-    # TODO internationalize "Herbarium Labels"
-      title << safe_br + "Herbarium Labels:"
-      specimens = observation.specimens
-      specimens.each do |specimen|
-        title << safe_br + link_to(specimen.herbarium_label,
-                                   controller: "specimen",
-                                   action: "show_specimen", id: specimen.id)
-      end
+      title << content_tag(:ul, herbarium_label_subtitle(observation))
     end
     title
+	end
+
+	def herbarium_label_subtitle(observation)
+	  subtitle = content_tag(:small, :show_observation_herbarium_labels.t)
+    observation.specimens.each do |specimen|
+      subtitle << content_tag(:li, link_to_labeled_specimen(specimen),
+                              class: "list-unstyled")
+    end
+    subtitle
+	end
+
+	def link_to_labeled_specimen(specimen)
+	  link_to(specimen.herbarium_label, controller: "specimen",
+            action: "show_specimen", id: specimen.id)
 	end
 
   # Call link_to with query params added.
