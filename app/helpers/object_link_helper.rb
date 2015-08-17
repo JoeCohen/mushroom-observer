@@ -120,7 +120,7 @@ module ObjectLinkHelper
     return result
   end
 
-  def location_search_links(name)
+ def location_search_links(name)
     search_string = name.gsub(" Co.", " County").gsub(", USA", "").gsub(" ", "+").gsub(",", "%2C")
     return [
       link_to("Google Maps", "http://maps.google.com/maps?q=" + search_string),

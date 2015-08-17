@@ -24,10 +24,27 @@ module ApplicationHelper
   def safe_nbsp; "&nbsp;".html_safe; end
 
   # Return escaped HTML.
-  #
   #   "<i>X</i>"  -->  "&lt;i&gt;X&lt;/i&gt;"
   def escape_html(html)
 		h(html.to_str)
+	end
+
+	# assemble observation "title" -- the html which appears between:
+	# (a) the search bar & Observation details, and
+	# (b) the (left) navbar and the (right) tabset
+	def observation_title(observation)
+    title = :show_observation_title.t(name: observation.unique_format_name)
+    if observation.specimen
+    # TODO internationalize "Herbarium Labels"
+      title << safe_br + "Herbarium Labels:"
+      specimens = observation.specimens
+      specimens.each do |specimen|
+        title << safe_br + link_to(specimen.herbarium_label,
+                                   controller: "specimen",
+                                   action: "show_specimen", id: specimen.id)
+      end
+    end
+    title
 	end
 
   # Call link_to with query params added.
@@ -52,7 +69,7 @@ module ApplicationHelper
 
   # Add something to the header from within view.  This can be called as many
   # times as necessary -- the application layout will mash them all together
-  # and stick them at the end of the <tt>&gt;head&lt;/tt> section.
+  # and stick them at the end of the <tt>&gt;head&lt;</tt> section.
   #
   #   <%
   #     add_header(GMap.header)       # adds GMap general header
@@ -202,6 +219,6 @@ module ApplicationHelper
       max_upload_size: max_size
     ))
     content_tag(:span, :select_file.t + file_field, class: "file-field btn") +
-    content_tag(:span, :no_file_selected.t)
+      content_tag(:span, :no_file_selected.t)
   end
 end

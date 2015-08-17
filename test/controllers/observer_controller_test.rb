@@ -545,6 +545,24 @@ class ObserverControllerTest < FunctionalTestCase
     assert_equal(4, Query.count)
   end
 
+  def test_show_specimen_labels_in_observation
+    # observation with one specimen
+    get_with_dump(:show_observation, id: 2)
+    assert_select("a[href *= '/show_specimen/1']", count: 1)
+    assert_select("a", text: "Cortinarius sp.: NYBG 1234", count: 1)
+
+    # observation with two specimens
+    get_with_dump(:show_observation, id: 3)
+    assert_select("a[href *= 'specimen/show_specimen/2']", count: 1)
+    assert_select("a", text: "Coprinus comatus: NYBG 4321", count: 1)
+    assert_select("a[href *= 'specimen/show_specimen/3']", count: 1)
+    assert_select("a", text: "Coprinus comatus: ROLF 1", count: 1)
+
+    # observation with no specimens
+    get_with_dump(:show_observation, id: 5)
+    assert_select("a[href *= 'specimen/show_specimen']", count: 0)
+  end
+
   def test_show_observation_edit_links
     obs = observations(:detailed_unknown)
     proj = projects(:bolete_project)
