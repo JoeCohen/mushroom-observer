@@ -34,22 +34,21 @@ module ApplicationHelper
     h(html.to_str)
   end
 
-  # assemble observation "title" -- the html which appears between:
+  # Assemble observation "title" -- the html which appears between:
   # (a) the search bar & Observation details, and
-  # (b) the (left) navbar and the (right) tabset
+  # (b) the (left) navbar and the (right) tabset.
   def observation_title(observation)
     title = :show_observation_title.t(name: observation.unique_format_name)
     if observation.specimen
-      title << content_tag(:ul, herbarium_label_subtitle(observation))
+      title << content_tag(:br, herbarium_label_subtitle(observation))
     end
     title
   end
 
   def herbarium_label_subtitle(observation)
-    subtitle = content_tag(:small, :show_observation_herbarium_labels.t)
+    subtitle = :show_observation_herbarium_labels.t + ":"
     observation.specimens.each do |specimen|
-      subtitle << content_tag(:li, link_to_labeled_specimen(specimen),
-                              class: "list-unstyled")
+      subtitle << content_tag(:br, link_to_labeled_specimen(specimen)
     end
     subtitle
   end
