@@ -40,15 +40,15 @@ module ApplicationHelper
   def observation_title(observation)
     title = :show_observation_title.t(name: observation.unique_format_name)
     if observation.specimen
-      title << content_tag(:br, herbarium_label_subtitle(observation))
+      title << content_tag(:br, herbarium_labels_subtitle(observation))
     end
     title
   end
 
-  def herbarium_label_subtitle(observation)
+  def herbarium_labels_subtitle(observation)
     subtitle = :show_observation_herbarium_labels.t + ":"
     observation.specimens.each do |specimen|
-      subtitle << content_tag(:br, link_to_labeled_specimen(specimen))
+      subtitle << tag(:br) + link_to_labeled_specimen(specimen)
     end
     subtitle
   end
