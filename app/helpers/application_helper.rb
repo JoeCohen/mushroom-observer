@@ -48,7 +48,7 @@ module ApplicationHelper
   def herbarium_label_subtitle(observation)
     subtitle = :show_observation_herbarium_labels.t + ":"
     observation.specimens.each do |specimen|
-      subtitle << content_tag(:br, link_to_labeled_specimen(specimen)
+      subtitle << content_tag(:br, link_to_labeled_specimen(specimen))
     end
     subtitle
   end
