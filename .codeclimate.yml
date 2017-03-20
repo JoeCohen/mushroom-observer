@@ -1,13 +1,3 @@
-languages:
-  Ruby: true
-exclude_paths:
-- public/design_test/jquery-1.5.2.min.js
-- app/assets/javascripts/bootstrap.js
-- app/assets/javascripts/jquery.js
-- app/assets/javascripts/jstz.js
-- app/assets/javascripts/lightbox.js
-- app/classes/query/modules/serialization.rb
-############
 engines:
   rubocop:
     enabled: true
@@ -39,10 +29,6 @@ exclude_paths: # customize
 - files/
 - public/
 - spec/
+- test/
 - tmp/
-- public/design_test/jquery-1.5.2.min.js
-- app/assets/javascripts/bootstrap.js
-- app/assets/javascripts/jquery.js
-- app/assets/javascripts/jstz.js
-- app/assets/javascripts/lightbox.js
 - app/classes/query/modules/serialization.rb
