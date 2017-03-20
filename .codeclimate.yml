@@ -8,3 +8,42 @@ exclude_paths:
 - app/assets/javascripts/jstz.js
 - app/assets/javascripts/lightbox.js
 - app/classes/query/modules/serialization.rb
+############
+engines:
+  rubocop:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+        ruby:
+          mass_threshold: 18
+  brakeman:
+    enabled: true
+ ## We also recommend enabling bundler-audit by uncommenting the two lines below. It is an example of additional functionality offered by our engines not offered by classic.
+  bundler-audit:
+    enabled: true
+ratings: # customize
+  paths:
+  - app/**/*
+  - lib/**/*
+exclude_paths: # customize
+- .bundle/
+- app/assets/fonts/
+- app/assets/images/
+- app/assets/javascripts/vendor/
+- app/assets/stylesheets/vendor/
+- bin/rails
+- bin/rake
+- db/
+- doc/
+- files/
+- public/
+- spec/
+- tmp/
+- public/design_test/jquery-1.5.2.min.js
+- app/assets/javascripts/bootstrap.js
+- app/assets/javascripts/jquery.js
+- app/assets/javascripts/jstz.js
+- app/assets/javascripts/lightbox.js
+- app/classes/query/modules/serialization.rb
