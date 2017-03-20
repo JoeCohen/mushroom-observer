@@ -15,7 +15,6 @@ engines:
 ratings: # customize
   paths:
   - app/**/*
-  - lib/**/*
 exclude_paths: # customize
 - .bundle/
 - app/assets/fonts/
