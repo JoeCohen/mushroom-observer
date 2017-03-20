@@ -1,5 +1,4 @@
 languages:
-  JavaScript: true
   Ruby: true
 exclude_paths:
 - public/design_test/jquery-1.5.2.min.js
