@@ -15,7 +15,6 @@ engines:
 ratings: # customize
   paths:
   - app/**/*
-  - lib/**/*
 exclude_paths: # customize
 - .bundle/
 - app/assets/fonts/
@@ -23,6 +22,7 @@ exclude_paths: # customize
 - app/assets/javascripts/vendor/
 - app/assets/stylesheets/vendor/
 - app/classes/query/modules/serialization.rb- bin
+- bin
 - db
 - doc
 - files
