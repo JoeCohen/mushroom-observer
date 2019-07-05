@@ -61,6 +61,12 @@ module Query::Modules::Ordering
         "#{table}.title ASC"
       end
 
+    when "observation_text_name"
+      if sortable_by_observation_text_name?
+        "observations.text_name ASC, observations.id DESC,
+         #{model.name.tableize}.id ASC"
+      end
+
     when "title", "login", "summary", "copyright_holder", "where",
          "initial_det", "accession_number"
       "#{table}.#{by} ASC" if columns.include?(by)
@@ -171,5 +177,13 @@ module Query::Modules::Ordering
         (Regexp.last_match(2) == "ASC" ? "DESC" : "ASC") +
         Regexp.last_match(3)
     end
+  end
+
+  ###############################################################################
+
+  private
+
+  def sortable_by_observation_text_name?
+    model == Observation || /with_observations/ =~ flavor.to_s
   end
 end

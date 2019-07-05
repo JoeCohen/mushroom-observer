@@ -3208,6 +3208,48 @@ class QueryTest < UnitTestCase
     assert_query([obs2, obs1], :Observation, :in_set,
                  ids: [obs1.id, obs2.id], by: :location)
   end
+
+  def test_order_by_observation_text_name
+    # Image.delete(Image.all.pluck(:id))
+    img_oldest = Image.create(
+      created_at: "2019-07-01", notes: "img_oldest", user: rolf
+    )
+    img_2nd_oldest = Image.create(
+      created_at: "2019-07-02", notes: "img_2nd_oldest", user: rolf
+    )
+    img_2nd_newest = Image.create(
+      created_at: "2019-07-03", notes: "img_2nd_newest", user: rolf
+    )
+    img_newest = Image.create(
+      created_at: "2019-07-04", notes: "img_newest", user: rolf
+    )
+    img_without_obs = Image.create(
+      created_at: "2019-07-04", user: rolf)
+    obs_agaricus_1 = Observation.create!(
+      text_name: "Abacina", created_at: "2019-07-14", user: rolf,
+      images: [img_oldest], thumb_image: img_oldest
+      )
+    obs_agaricus_2 = Observation.create(
+      text_name: "Abacina", created_at: "2019-07-13", user: rolf,
+      images: [img_2nd_oldest], thumb_image: img_2nd_oldest
+      )
+    obs_zelleromyces_1 = Observation.create(
+      text_name: "Zelleromyces", created_at: "2019-07-12", user: rolf,
+      images: [img_2nd_newest], thumb_image: img_2nd_newest
+      )
+    obs_zelleromyces_2 = Observation.create(
+      text_name: "Zelleromyces", created_at: "2019-07-11", user: rolf,
+      images: [img_newest], thumb_image: img_newest
+      )
+    expect = Image.includes(:observations).
+               where.not(observations: { thumb_image: nil }).
+               order("observations.text_name asc").
+               order("observations.id desc").
+               order("images.id asc")
+    query = Query.lookup(:Image,:with_observations, by: "observation_text_name")
+    # assert_equal instead of assert_query; the latter is order-insensitive
+    assert_equal(expect, query.results)
+  end
 end
 
 # rubocop:enable Style/FrozenStringLiteralComment
