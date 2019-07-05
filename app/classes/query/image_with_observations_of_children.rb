@@ -19,7 +19,7 @@ class Query::ImageWithObservationsOfChildren < Query::ImageWithObservations
   end
 
   def default_order
-    "name"
+    "observation_text_name"
   end
 
   def coerce_into_observation_query

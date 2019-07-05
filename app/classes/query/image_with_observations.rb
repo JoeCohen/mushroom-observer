@@ -104,7 +104,7 @@ class Query::ImageWithObservations < Query::ImageBase
   end
 
   def default_order
-    "name"
+    "observation_text_name"
   end
 
   def add_join_to_locations!
