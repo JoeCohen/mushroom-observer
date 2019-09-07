@@ -619,19 +619,14 @@ class ObserverControllerTest < FunctionalTestCase
     assert_equal(css_select("title").text,
                  "Mushroom Observer: Observation Search",
                  "metadata <title> tag incorrect")
-
-    # If pattern is id of a real Observation, go directly to that Observation.
-    obs = Observation.first
-    get_with_dump(:observation_search, pattern: obs.id)
-    assert_redirected_to(action: :show_observation, id: Observation.first.id)
   end
 
   # Prove that when pattern is the id of a real observation,
   # goes directly to that observation.
   def test_observation_search_matching_id
     obs = observations(:minimal_unknown_obs)
-    get(:observation_search, params: { pattern: obs.id })
-    assert_redirected_to(%r{/#{obs.id}})
+    get_with_dump(:observation_search, pattern: obs.id )
+    assert_redirected_to(action: :show_observation, id: obs.id)
   end
 
   # Prove that when the pattern causes an error,
