@@ -613,6 +613,7 @@ class ObserverControllerTest < FunctionalTestCase
     # html <title> contents are the action name
     pattern = "no hits"
     get_with_dump(:observation_search, pattern: pattern)
+
     assert_template(:list_observations)
     assert_empty(@controller.instance_variable_get("@title"))
     assert_empty(css_select('[id="right_tabs"]').text, "Tabset should be empty")
