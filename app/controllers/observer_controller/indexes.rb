@@ -68,6 +68,10 @@ class ObserverController
     if pattern.match(/^\d+$/) && (observation = Observation.safe_find(pattern))
       redirect_to(action: "show_observation", id: observation.id)
     else
+      if variable_absent?(pattern)
+        # Default: query for observations of synonyms of pattern
+        pattern = %Q(name:"#{pattern}" include_synonyms:true)
+      end
       search = PatternSearch::Observation.new(pattern)
       if search.errors.any?
         search.errors.each do |error|
@@ -225,6 +229,14 @@ class ObserverController
   end
 
   private
+
+  def variable_absent?(pattern)
+    !variable_present?(pattern)
+  end
+
+  def variable_present?(pattern)
+    /\w+:/ =~ pattern
+  end
 
   def download_observations_switch
     if params[:commit] == :CANCEL.l

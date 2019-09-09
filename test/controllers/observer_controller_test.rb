@@ -629,6 +629,22 @@ class ObserverControllerTest < FunctionalTestCase
     assert_redirected_to(action: :show_observation, id: obs.id)
   end
 
+  # Prove that where pattern is a Name, Observation search without parameters
+  # returns just Observations named pattern
+  def test_observation_search_pattern_only
+    pattern = "Stereum hirsutum"
+    non_stereum_obs = observations(:coprinus_comatus_obs)
+    non_stereum_obs.update(notes: pattern)
+
+    get_with_dump(:observation_search, pattern: pattern)
+    results = @controller.instance_variable_get("@objects")
+
+    assert_equal(
+      Observation.where(text_name: pattern).order(:id),
+      results.sort! # slightly faster than sort
+    )
+  end
+
   # Prove that when the pattern causes an error,
   # MO just displays an observation list
   def test_observation_search_bad_pattern
