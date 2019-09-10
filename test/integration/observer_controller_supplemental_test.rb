@@ -20,7 +20,8 @@ class ObserverControllerSupplementalTest < IntegrationTestCase
     click_link("Show Observations")
     click_link("Show Map")
     title = page.find_by_id("title")
-    title.assert_text("Map of Observation Index")
+    # matches, e.g., "Map of Observation Index" or "Map of Observations of xxx"
+    title.assert_text("Map of Observation)
   end
 
   # Prove that if a user clicks an Observation in Observation search results
