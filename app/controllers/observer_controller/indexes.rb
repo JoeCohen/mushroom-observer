@@ -86,7 +86,6 @@ class ObserverController
         end
       else
         search = PatternSearch::Observation.new(pattern)
-        pattern = search.query.params[:pattern]
       end
       if search.errors.any?
         search.errors.each do |error|
@@ -94,7 +93,7 @@ class ObserverController
         end
         render(action: :list_observations)
       else
-        @suggest_alternate_spellings = pattern
+        @suggest_alternate_spellings = search.query.params[:pattern]
         show_selected_observations(search.query)
       end
     end
