@@ -283,6 +283,16 @@ class QueryTest < UnitTestCase
     assert_equal(7, QueryRecord.count)
   end
 
+  def test_deserialization
+    non_ascii_chars = "`’"
+    query = Query.lookup(:Observation, :all, comments_has: non_ascii_chars)
+    deserialized = Query.deserialize(query.record[:description])
+    assert_equal(
+      non_ascii_chars, deserialized.params[:comments_has],
+      "Query should correctly serialize and deserialize non-ascii characters"
+    )
+  end
+
   ##############################################################################
   #
   #  :section: Query Mechanics
