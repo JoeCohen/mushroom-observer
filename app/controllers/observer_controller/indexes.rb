@@ -69,17 +69,32 @@ class ObserverController
       redirect_to(action: "show_observation", id: observation.id)
     else
       if variable_absent?(pattern)
-        # Default: query for observations of synonyms of pattern
+        # If pattern absent, search for Observations of synonyms of pattern
+        # by forcing PatternSearch to create a Query::ObservationAll
+        # instead of a Query::ObservationPatternSearch
         pattern = %Q(name:"#{pattern}" include_synonyms:true)
+        search = PatternSearch::Observation.new(pattern)
+
+        unless search.query
+          @objects = nil # erase results of any prior query
+          @error = :runtime_no_matches_pattern.t(
+            type: :OBSERVATION, value: params[:pattern].to_s
+          )
+          @title = ""
+          @suggest_alternate_spellings = params[:pattern].to_s
+          render(action: :list_observations) and return
+        end
+      else
+        search = PatternSearch::Observation.new(pattern)
+        pattern = search.query.params[:pattern]
       end
-      search = PatternSearch::Observation.new(pattern)
       if search.errors.any?
         search.errors.each do |error|
           flash_error(error.to_s)
         end
         render(action: :list_observations)
       else
-        @suggest_alternate_spellings = search.query.params[:pattern]
+        @suggest_alternate_spellings = pattern
         show_selected_observations(search.query)
       end
     end
