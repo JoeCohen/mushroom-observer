@@ -642,7 +642,9 @@ class ObserverControllerTest < FunctionalTestCase
 
     assert_equal(
       Observation.where(text_name: pattern).order(:id),
-      results.sort! # slightly faster than sort
+      results.sort!, # slightly faster than sort
+      "Default Observation Search hits shouldn't return Observations matching" \
+      "only notes"
     )
   end
 
