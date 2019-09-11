@@ -22,8 +22,10 @@ class ObserverController
 
   # Displays matrix of Observations with the given text_name (or search_name).
   def observations_of_name
-    query = create_query(:Observation, :all, names: [params[:name]],
-                                             include_synonyms: true, by: :created_at)
+    query = create_query(:Observation, :all,
+                         names: [params[:name]],
+                         include_synonyms: true,
+                         by: :created_at)
     show_selected_observations(query)
   end
 
@@ -49,8 +51,9 @@ class ObserverController
   def observations_at_where
     where = params[:where].to_s
     params[:location] = where
-    query = create_query(:Observation, :at_where, user_where: where,
-                                                  location: Location.user_name(@user, where))
+    query = create_query(:Observation, :at_where,
+                         user_where: where,
+                         location: Location.user_name(@user, where))
     show_selected_observations(query, always_index: 1)
   end
 
@@ -65,37 +68,15 @@ class ObserverController
   # Display matrix of Observation's whose notes, etc. match a string pattern.
   def observation_search
     pattern = params[:pattern].to_s
-    if pattern.match(/^\d+$/) && (observation = Observation.safe_find(pattern))
+    if /^\d+$/ =~ pattern && (observation = Observation.safe_find(pattern))
       redirect_to(action: "show_observation", id: observation.id)
     else
-      if variable_absent?(pattern)
-        # If pattern absent, search for Observations of synonyms of pattern
-        # by forcing PatternSearch to create a Query::ObservationAll
-        # instead of a Query::ObservationPatternSearch
-        pattern = %Q(name:"#{pattern}" include_synonyms:true)
-        search = PatternSearch::Observation.new(pattern)
-
-        unless search.query
-          @objects = nil # erase results of any prior query
-          @error = :runtime_no_matches_pattern.t(
-            type: :OBSERVATION, value: params[:pattern].to_s
-          )
-          @title = ""
-          @suggest_alternate_spellings = params[:pattern].to_s
-          render(action: :list_observations) and return
-        end
-      else
-        search = PatternSearch::Observation.new(pattern)
-      end
-      if search.errors.any?
-        search.errors.each do |error|
-          flash_error(error.to_s)
-        end
-        render(action: :list_observations)
-      else
-        @suggest_alternate_spellings = search.query.params[:pattern]
-        show_selected_observations(search.query)
-      end
+      # If user didn't supply variables, search for Observations of synonyms of
+      # pattern. PatternSearch will then try to create a Query::ObservationAll
+      # instead of a Query::ObservationPatternSearch
+      pattern = default_pattern if variable_absent?
+      search = PatternSearch::Observation.new(pattern)
+      show_observation_search_results(search)
     end
   end
 
@@ -242,14 +223,58 @@ class ObserverController
     flash_error("Internal error: #{e}", *e.backtrace[0..10])
   end
 
+  # ============================================================================
+
   private
 
-  def variable_absent?(pattern)
-    !variable_present?(pattern)
+  def default_pattern
+    %(name:"#{params[:pattern]}" include_synonyms:true)
   end
 
-  def variable_present?(pattern)
-    /\w+:/ =~ pattern
+  def variable_absent?
+    !variable_present?
+  end
+
+  def variable_present?
+    /\w+:/ =~ params[:pattern].to_s
+  end
+
+  def show_observation_search_results(search)
+    if search.query || variable_present?
+      show_query_results(search)
+    else
+      # PatternSearch failed to create any query. Handle specially because
+      # normal handling might require a query:
+      # show_selected_observations needs a query argument
+      show_no_name_matches
+    end
+  end
+
+  # Handle observation_search results
+  # Assumes that there's a search error or query
+  def show_query_results(search)
+    if search.errors.any?
+      search.errors.each do |error|
+        flash_error(error.to_s)
+      end
+      render(action: :list_observations)
+    else
+      @suggest_alternate_spellings = search.query.params[:pattern]
+      show_selected_observations(search.query)
+    end
+  end
+
+  # Handle observation_search results when there's no query or query.error
+  # Create an error, clean up some instance variables, and render
+  def show_no_name_matches
+    # Create an error to be flashed by view
+    @error = :runtime_no_matches_pattern.t(
+      type: :OBSERVATION, value: params[:pattern].to_s
+    )
+    @objects = nil # erase results of any prior query
+    @suggest_alternate_spellings = params[:pattern].to_s
+    @title = ""
+    render(action: :list_observations)
   end
 
   def download_observations_switch
