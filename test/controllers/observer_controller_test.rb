@@ -3444,6 +3444,40 @@ class ObserverControllerTest < FunctionalTestCase
     end
   end
 
+  #   ------------------------
+  #    short observation form
+  #   ------------------------
+  # tests for revised new/reate form, created 2021. These are mostly view tests.
+  # Many hould be consdered forr deletion after the form has been in production
+  # for a while.  JDC 2021-09-11
+
+  def test_new_observation_short_form
+    login("rolf")
+    get(:create_observation, params: { form: "short" })
+    # assert_template is deprecated, BUT
+    # I really want to test (for now) that these templates are rendered
+    # 2021-09-11 JDC
+    assert_template("create_observation_short")
+    assert_template("observer/_form_observations_short")
+=begin
+    requires_login(:create_observation)
+    assert_form_action(action: :create_observation, approved_name: "")
+    assert_input_value(:collection_number_name,
+                       users(:rolf).legal_name)
+    assert_input_value(:collection_number_number, "")
+    assert_input_value(:herbarium_record_herbarium_name,
+                       users(:rolf).preferred_herbarium_name)
+    assert_input_value(:herbarium_record_herbarium_id, "")
+    assert_true(@response.body.include?("Albion, Mendocino Co., California"))
+    users(:rolf).update(location_format: :scientific)
+    get(:create_observation)
+    assert_true(@response.body.include?("California, Mendocino Co., Albion"))
+=end
+
+  end
+
+
+
   # ----------------------------
   #  Interest.
   # ----------------------------
@@ -4159,3 +4193,5 @@ class ObserverControllerTest < FunctionalTestCase
     assert_objs_equal(obs, data[1].image_obs)
   end
 end
+
+
