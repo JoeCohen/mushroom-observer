@@ -133,19 +133,6 @@
 </div>
 <!-- /LAT_LONG_ALT -->
 
-<div class="row push-down">
-  <div class="col-xs-12 max-width-text-times-two">
-<%= render(partial: "naming/form",
-            locals: {
-              action:       action,
-              button_name:  button_name,
-              show_reasons: false,
-              unfocused:    true
-            }
-          ) if include_naming %>
-  </div>
-</div>
-
 <div class="row">
   <div class="col-xs-12 push-down max-width-text">
     <div class="form-inline">
@@ -239,6 +226,21 @@
 <!-- NOTES -->
 <%= render "form_observation_notes" %>
 <!-- /NOTES -->
+
+<%# -- NAMING -- %>
+<div class="row push-down">
+  <div class="col-xs-12 max-width-text-times-two">
+    <%= render(partial: "naming/form",
+               locals: {
+                 action:       action,
+                 button_name:  button_name,
+                 show_reasons: false,
+                 unfocused:    true
+               }
+         ) if include_naming %>
+  </div>
+</div>
+<%# -- /NAMING -- %>
 
 <% if @projects.any? || @lists.any? %>
   <%= submit_tag(button_name, class: "btn center-block push-down") %>
