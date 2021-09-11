@@ -57,7 +57,7 @@ class ObserverController
     init_list_vars_for_create
     defaults_from_last_observation_created
 
-    return render("create_observation_short") if params[:form] == "short"
+    return render("create_observation_simple") if params[:form] == "simple"
   end
 
   def defaults_from_last_observation_created

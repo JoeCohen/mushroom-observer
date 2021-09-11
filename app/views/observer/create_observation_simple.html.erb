@@ -15,7 +15,7 @@
         { multipart: true, name: "observation_form" }) do
 %>
   <%= render(
-        partial: "form_observations_short",
+        partial: "form_observations_simple",
         locals: {
           action: :create_observation,
           logging_optional: false,
