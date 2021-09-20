@@ -3451,14 +3451,14 @@ class ObserverControllerTest < FunctionalTestCase
   # Many hould be consdered forr deletion after the form has been in production
   # for a while.  JDC 2021-09-11
 
-  def test_new_observation_simple_form
+  def test_new_observation_2021_form
     login("rolf")
-    get(:create_observation, params: { form: "simple" })
+    get(:create_observation, params: { form: "2021" })
     # assert_template is deprecated, BUT
     # I really want to test (for now) that these templates are rendered
     # 2021-09-11 JDC
-    assert_template("create_observation_simple")
-    assert_template("observer/_form_observations_simple")
+    assert_template("create_observation_2021")
+    assert_template("observer/_form_observations_2021")
   end
 
 
