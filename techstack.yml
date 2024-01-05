@@ -1,7 +1,8 @@
 repo_name: JoeCohen/mushroom-observer
 report_id: 25a177e61999387dc807506298fe1ff1
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-16T04:08:23+00:00'
+timestamp: '2024-01-05T08:40:12+00:00'
 requested_by: nimmolo
 provider: github
 branch: main
@@ -15,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -25,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer
   detection_source: Repo Metadata
 - name: Perl
   description: Highly capable, feature-rich programming language with over 26 years
@@ -35,6 +38,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1048/perl.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer
   detection_source: Repo Metadata
 - name: Python
   description: A clear and powerful object-oriented programming language, comparable
@@ -45,6 +49,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer
   detection_source: Repo Metadata
 - name: Ruby
   description: A dynamic, interpreted, open source programming language with a focus
@@ -56,8 +61,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/989/ruby.png
-  detection_source_url: Gemfile.lock
-  detection_source: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
+  detection_source: Repo Metadata
   last_updated_by: andrew nimmo
   last_updated_on: 2022-05-27 21:10:59.000000000 Z
 - name: SQL
@@ -68,7 +73,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
-  detection_source: db/initialize.sql
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/db/clean.sql
+  detection_source: db/clean.sql
   last_updated_by: Joe Cohen
   last_updated_on: 2017-08-29 17:55:52.000000000 Z
 - name: Bootstrap
@@ -81,6 +87,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Front-End Frameworks
   image_url: https://img.stackshare.io/service/1101/C9QJ7V3X.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile
   detection_source: Gemfile
   last_updated_by: Jason
   last_updated_on: 2022-03-09 01:26:13.000000000 Z
@@ -93,6 +100,7 @@ tools:
   category: Libraries
   sub_category: Javascript UI Libraries
   image_url: https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -104,7 +112,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Query Languages
   image_url: https://img.stackshare.io/service/3820/12972006.png
-  detection_source: public/graphql/schema.graphql
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile
+  detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
 - name: GraphiQL
@@ -116,6 +125,7 @@ tools:
   category: Data Stores
   sub_category: Database Tools
   image_url: https://img.stackshare.io/service/7879/GraphiQL.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -127,6 +137,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/1025/logo-mysql-170x170.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile
   detection_source: Gemfile
   last_updated_by: Nathan Wilson
   last_updated_on: 2014-03-18 22:04:54.000000000 Z
@@ -140,7 +151,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/6577/7b894961369b7c73e2a32f11f845e049_400x400.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -152,6 +163,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/2988/4e77LXIo_400x400.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile
   detection_source: Gemfile
   last_updated_by: Joseph D. Cohen
   last_updated_on: 2022-07-12 23:59:11.000000000 Z
@@ -165,7 +177,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/2595/capybara.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: andrew nimmo
   last_updated_on: 2022-12-09 08:58:13.000000000 Z
@@ -177,6 +189,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -186,6 +199,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/.github/workflows/ci_rails.yml
   detection_source: ".github/workflows/ci_rails.yml"
   last_updated_by: Joe Cohen
   last_updated_on: 2022-06-18 20:07:09.000000000 Z
@@ -198,6 +212,7 @@ tools:
   category: Application Hosting
   sub_category: Web Servers
   image_url: https://img.stackshare.io/service/1052/YMxUfyWf.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/config/etc/nginx.conf
   detection_source: config/etc/nginx.conf
   last_updated_by: Jason
   last_updated_on: 2014-07-27 19:02:00.000000000 Z
@@ -210,7 +225,8 @@ tools:
   category: Monitoring
   sub_category: Performance Monitoring
   image_url: https://img.stackshare.io/service/103/default_193410db3a7e419c7b436961bf41d733c7346b59.png
-  detection_source: config/newrelic.yml
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile
+  detection_source: Gemfile
   last_updated_by: JoeCohen
   last_updated_on: 2022-12-19 21:33:06.000000000 Z
 - name: RuboCop
@@ -223,7 +239,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/2643/rubocop.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -235,6 +251,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -246,6 +263,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile
   detection_source: Gemfile
   last_updated_by: Nathan Wilson
   last_updated_on: 2014-03-18 22:04:54.000000000 Z
@@ -258,6 +276,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer
   detection_source: Repo Metadata
 - name: UglifyJS
   description: A JavaScript parser, minifier, compressor and beautifier toolkit.
@@ -267,6 +286,7 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/service/2203/default_9058af6f02375a99f634f537d727e32df92ac262.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2020-08-14 03:07:54.000000000 Z
@@ -280,7 +300,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18977/default_bc359c39d5bb5b07850d1bca94ab8afbc55734a2.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2020-08-14 03:07:54.000000000 Z
@@ -301,7 +321,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19030/default_5e6f4490e7ced4a026c6f8459237f2bb9d24fbdb.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -315,7 +335,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18865/default_2fe576f13c88e20e645ee0a744c045ee730bcad6.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -336,7 +356,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19060/default_7520676ca0e090ecd07df08a8e0994b056912237.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -350,7 +370,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19166/default_f74adb1c8d95c3268ea94f5ba9bbb60a0bc900ed.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -364,7 +384,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18858/default_098b6651de16fb4d6fdc54a8089650263c837883.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -378,7 +398,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18828/default_07d724f95ff4caf087b38d9eb083e0406bcfdadf.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -393,7 +413,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18817/default_b17f14dbef6c1275120b34d9ec2eff5942499bd5.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -407,7 +427,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19054/default_2be036aaca5c71baf790e00f1ef80dd37a625905.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: andrew nimmo
   last_updated_on: 2022-05-26 00:07:54.000000000 Z
@@ -421,7 +441,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19501/default_42d3fa2d5b834c67c8a751c77da442242d04b268.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2020-08-14 03:07:54.000000000 Z
@@ -435,7 +455,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18976/default_bc359c39d5bb5b07850d1bca94ab8afbc55734a2.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Jason
   last_updated_on: 2022-03-09 01:26:13.000000000 Z
@@ -449,7 +469,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19740/default_dd31b4f280886d69f8a43459d55ecc7f1ae44486.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: andrew nimmo
   last_updated_on: 2022-01-18 02:51:23.000000000 Z
@@ -463,7 +483,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18896/default_9386886dd1c6c396a11bd4b49732afb9ec444f8d.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -477,7 +497,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18859/default_098b6651de16fb4d6fdc54a8089650263c837883.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2020-08-14 03:07:54.000000000 Z
@@ -491,7 +511,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19105/default_fca7ffebc4c078263714788a3e4853bf74bde297.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -506,7 +526,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18864/default_96cb61a9c0f8ef41b80df83209dca4f4c229184e.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -521,7 +541,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19467/default_9fadec62becac7e7d4b0d823b4daea6bad21b1be.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: andrew nimmo
   last_updated_on: 2022-12-15 20:36:33.000000000 Z
@@ -535,7 +555,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18937/default_ec64e7b00489c2b012b637eba2526e31e442c25b.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: andrew nimmo
   last_updated_on: 2022-10-07 22:17:29.000000000 Z
@@ -549,7 +569,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19182/default_992f30e8abd98f8427f66b25a8cb98662661c0ea.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2020-08-14 03:07:54.000000000 Z
@@ -564,7 +584,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18818/default_f36df1cfa9ff6061d7f9b4879088be8538581c49.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: andrew nimmo
   last_updated_on: 2022-12-09 08:58:13.000000000 Z
@@ -579,7 +599,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18888/default_1e22ca9f3f63a8c93249bae500705b9451e7e882.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: andrew nimmo
   last_updated_on: 2022-12-09 08:58:13.000000000 Z
@@ -593,7 +613,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18834/default_0e382579c2f0564abd86ba662410379f1d623a9c.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Jason
   last_updated_on: 2022-03-09 01:26:13.000000000 Z
@@ -607,7 +627,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18883/default_947bd37125b8812cb816bc3cf571b13df90a4fe0.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2020-08-14 03:07:54.000000000 Z
@@ -622,7 +642,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19246/default_518f3430d0c3ea4653c591ebd7e75da67f51cfaf.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: JoeCohen
   last_updated_on: 2022-12-19 21:33:06.000000000 Z
@@ -636,7 +656,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18823/default_b8fbb83e23c963442e15398c5b56262cc6267d6f.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: andrew nimmo
   last_updated_on: 2022-12-12 22:49:13.000000000 Z
@@ -657,7 +677,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19489/default_235e01dd950d1f80c14beead28dc8c06a1dbf108.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: andrew nimmo
   last_updated_on: 2022-01-29 07:02:26.000000000 Z
@@ -671,7 +691,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19298/default_665ed3fcb2a1ba0439337b543b18095155087d89.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -685,7 +705,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18847/default_49e8e438a279d3b7963273823890f9482ce83fb4.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -700,7 +720,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19003/default_ed0106f3a65a9fdb4ffde124a531663be2de70ba.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -714,7 +734,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19270/default_67289672b0f514dd92f3c786eb2cf0a39b0db10f.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -728,7 +748,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18887/default_1e22ca9f3f63a8c93249bae500705b9451e7e882.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 19:41:35.000000000 Z
@@ -742,7 +762,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19508/default_e4388de496824e0638763f2d5c887a8895c2ceb4.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -756,7 +776,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18901/default_f0ad2b1ffbe10fdd866f9f8e5f812599d9e8085b.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: andrew nimmo
   last_updated_on: 2022-12-09 08:58:13.000000000 Z
@@ -771,7 +791,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18819/default_6564ae059af6c4ea7065fd2329370c7a05341cf8.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -785,7 +805,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19198/default_be4b4d308c5637e0747ed40c613027452d6ef0c5.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
@@ -800,7 +820,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18967/default_20d16c1471b93397c8ef93b19baf0989f59663c0.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2020-08-14 03:07:54.000000000 Z
@@ -815,7 +835,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19218/default_504c6d1cb95a30a2134a5c2236c1c37c91700cc1.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Jason Hollinger
   last_updated_on: 2022-11-24 01:56:43.000000000 Z
@@ -830,7 +850,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19420/default_16904f646648128b821ee8aabb068fa7a1b5025f.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: andrew nimmo
   last_updated_on: 2022-12-09 08:58:13.000000000 Z
@@ -845,7 +865,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18824/default_6564ae059af6c4ea7065fd2329370c7a05341cf8.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Jason
   last_updated_on: 2022-03-09 01:26:13.000000000 Z
