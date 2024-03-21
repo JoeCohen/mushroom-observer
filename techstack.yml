@@ -1,12 +1,12 @@
 repo_name: JoeCohen/mushroom-observer
-report_id: 25a177e61999387dc807506298fe1ff1
+report_id: a6417b3759288be7e755f0d566b09878
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:40:12+00:00'
+timestamp: '2024-03-21T20:59:13+00:00'
 requested_by: nimmolo
 provider: github
 branch: main
-detected_tools_count: 62
+detected_tools_count: 69
 tools:
 - name: C lang
   description: One of the most widely used programming languages of all time
@@ -156,7 +156,7 @@ tools:
   last_updated_by: Joe Cohen
   last_updated_on: 2023-01-03 18:31:56.000000000 Z
 - name: Bundler
-  description: 'A consistent environment for tracking and installing  gems and versions '
+  description: A consistent environment for tracking and installing  gems and versions
   website_url: http://bundler.io
   open_source: false
   hosted_saas: false
@@ -310,7 +310,7 @@ tools:
     cve_url: https://github.com/advisories/GHSA-qcm3-vfq5-wfr2
     detected_date: Jun 7
     severity: high
-    first_patched: 
+    first_patched: 4.3.3
 - name: actionmailer
   description: Email on Rails
   package_url: https://rubygems.org/actionmailer
@@ -345,7 +345,7 @@ tools:
     cve_url: https://github.com/advisories/GHSA-9chr-4fjh-5rgw
     detected_date: Oct 29
     severity: low
-    first_patched: 
+    first_patched:
 - name: actionview
   description: Simple
   package_url: https://rubygems.org/actionview
@@ -473,6 +473,20 @@ tools:
   detection_source: Gemfile
   last_updated_by: andrew nimmo
   last_updated_on: 2022-01-18 02:51:23.000000000 Z
+- name: bullet
+  description: Help to kill N+1 queries and unused eager loading
+  package_url: https://rubygems.org/bullet
+  version: 7.0.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/rubygems/image.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: Jason
+  last_updated_on: 2022-03-09 01:26:13.000000000 Z
 - name: coffee-rails
   description: CoffeeScript adapter for the Rails asset pipeline
   package_url: https://rubygems.org/coffee-rails
@@ -483,6 +497,34 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18896/default_9386886dd1c6c396a11bd4b49732afb9ec444f8d.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: Joe Cohen
+  last_updated_on: 2023-01-03 18:31:56.000000000 Z
+- name: date
+  description: A subclass of Object includes Comparable module for handling dates
+  package_url: https://rubygems.org/date
+  version: 3.3.3
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/rubygems/image.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: Joe Cohen
+  last_updated_on: 2023-01-03 18:31:56.000000000 Z
+- name: graphql-batch
+  description: A query batching executor for the graphql gem
+  package_url: https://rubygems.org/graphql-batch
+  version: 0.5.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/rubygems/image.png
   detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
@@ -573,6 +615,20 @@ tools:
   detection_source: Gemfile
   last_updated_by: Joe Cohen
   last_updated_on: 2020-08-14 03:07:54.000000000 Z
+- name: mini_racer
+  description: Minimal embedded v8 engine for Ruby
+  package_url: https://rubygems.org/mini_racer
+  version: 0.6.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/rubygems/image.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: Jason
+  last_updated_on: 2022-03-09 01:26:13.000000000 Z
 - name: minitest
   description: Minitest provides a complete suite of testing facilities supporting
     TDD, BDD, mocking, and benchmarking
@@ -661,8 +717,20 @@ tools:
   last_updated_by: andrew nimmo
   last_updated_on: 2022-12-12 22:49:13.000000000 Z
   vulnerabilities:
+  - name: Use-after-free in libxml2 via Nokogiri::XML::Reader
+    cve_id:
+    cve_url: https://github.com/advisories/GHSA-vcc3-rw6f-jv97
+    detected_date: Mar 19
+    severity: moderate
+    first_patched: 1.15.6
+  - name: Nokogiri update packaged libxml2 to v2.12.5 to resolve CVE-2024-25062
+    cve_id:
+    cve_url: https://github.com/advisories/GHSA-xc9x-jj77-9p9j
+    detected_date: Feb 6
+    severity: moderate
+    first_patched: 1.15.6
   - name: Nokogiri updates packaged libxml2 to v2.10.4 to resolve multiple CVEs
-    cve_id: 
+    cve_id:
     cve_url: https://github.com/advisories/GHSA-pxvg-2qj5-37jq
     detected_date: Apr 12
     severity: moderate
@@ -691,6 +759,20 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19298/default_665ed3fcb2a1ba0439337b543b18095155087d89.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: Joe Cohen
+  last_updated_on: 2023-01-03 18:31:56.000000000 Z
+- name: rails-html-sanitizer
+  description: HTML sanitization for Rails applications
+  package_url: https://rubygems.org/rails-html-sanitizer
+  version: 1.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/rubygems/image.png
   detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Joe Cohen
@@ -839,6 +921,20 @@ tools:
   detection_source: Gemfile
   last_updated_by: Jason Hollinger
   last_updated_on: 2022-11-24 01:56:43.000000000 Z
+- name: web-console
+  description: A debugging tool for your Ruby on Rails applications
+  package_url: https://rubygems.org/web-console
+  version: 4.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/rubygems/image.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: Joseph D. Cohen
+  last_updated_on: 2022-07-12 23:59:11.000000000 Z
 - name: webdrivers
   description: Run Selenium tests more easily with install and updates for all supported
     webdrivers
@@ -869,3 +965,18 @@ tools:
   detection_source: Gemfile
   last_updated_by: Jason
   last_updated_on: 2022-03-09 01:26:13.000000000 Z
+- name: xmlrpc
+  description: XMLRPC is a lightweight protocol that enables remote procedure calls
+    over HTTP
+  package_url: https://rubygems.org/xmlrpc
+  version: 0.3.2
+  license: Ruby
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/rubygems/image.png
+  detection_source_url: https://github.com/JoeCohen/mushroom-observer/blob/main/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: Joe Cohen
+  last_updated_on: 2020-08-14 03:07:54.000000000 Z
