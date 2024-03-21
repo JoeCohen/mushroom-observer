@@ -3,26 +3,26 @@
 ## Tech Stack
 JoeCohen/mushroom-observer is built on the following main stack:
 
-- [New Relic](http://newrelic.com) – Performance Monitoring
-- [Ruby](https://www.ruby-lang.org) – Languages
-- [Python](https://www.python.org) – Languages
-- [jQuery](http://jquery.com/) – Javascript UI Libraries
-- [MySQL](http://www.mysql.com) – Databases
-- [Perl](http://www.perl.org/) – Languages
-- [NGINX](http://nginx.org) – Web Servers
 - [C lang](http://en.wikipedia.org/wiki/C_(programming_language)) – Languages
-- [Bootstrap](http://getbootstrap.com/) – Front-End Frameworks
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
-- [UglifyJS](http://lisperator.net/uglifyjs/) – Javascript Utilities & Libraries
+- [Perl](http://www.perl.org/) – Languages
+- [Python](https://www.python.org) – Languages
+- [Ruby](https://www.ruby-lang.org) – Languages
 - [SQL](https://en.wikipedia.org/wiki/SQL) – Languages
-- [Capybara](http://jnicklas.github.io/capybara/) – Testing Frameworks
-- [RuboCop](http://batsov.com/rubocop/) – Code Review
-- [Bundler](http://bundler.io) – Front End Package Manager
+- [Bootstrap](http://getbootstrap.com/) – Front-End Frameworks
+- [jQuery](http://jquery.com/) – Javascript UI Libraries
 - [GraphQL](http://graphql.org/) – Query Languages
-- [Shell](https://en.wikipedia.org/wiki/Shell_script) – Shells
-- [Brakeman](http://brakemanscanner.org/) – Code Review
 - [GraphiQL](https://github.com/graphql/graphiql) – Database Tools
+- [MySQL](http://www.mysql.com) – Databases
+- [Brakeman](http://brakemanscanner.org/) – Code Review
+- [Bundler](http://bundler.io) – Front End Package Manager
+- [Capybara](http://jnicklas.github.io/capybara/) – Testing Frameworks
 - [GitHub Actions](https://github.com/features/actions) – Continuous Integration
+- [NGINX](http://nginx.org) – Web Servers
+- [New Relic](http://newrelic.com) – Performance Monitoring
+- [RuboCop](http://batsov.com/rubocop/) – Code Review
+- [Shell](https://en.wikipedia.org/wiki/Shell_script) – Shells
+- [UglifyJS](http://lisperator.net/uglifyjs/) – Javascript Utilities & Libraries
 
 Full tech stack [here](/techstack.md)
 
@@ -32,26 +32,26 @@ Full tech stack [here](/techstack.md)
 ## Tech Stack
 JoeCohen/mushroom-observer is built on the following main stack:
 
-- <img width='25' height='25' src='https://img.stackshare.io/service/103/default_193410db3a7e419c7b436961bf41d733c7346b59.png' alt='New Relic'/> [New Relic](http://newrelic.com) – Performance Monitoring
-- <img width='25' height='25' src='https://img.stackshare.io/service/989/ruby.png' alt='Ruby'/> [Ruby](https://www.ruby-lang.org) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/993/pUBY5pVj.png' alt='Python'/> [Python](https://www.python.org) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg' alt='jQuery'/> [jQuery](http://jquery.com/) – Javascript UI Libraries
-- <img width='25' height='25' src='https://img.stackshare.io/service/1025/logo-mysql-170x170.png' alt='MySQL'/> [MySQL](http://www.mysql.com) – Databases
-- <img width='25' height='25' src='https://img.stackshare.io/service/1048/perl.png' alt='Perl'/> [Perl](http://www.perl.org/) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/1052/YMxUfyWf.png' alt='NGINX'/> [NGINX](http://nginx.org) – Web Servers
 - <img width='25' height='25' src='https://img.stackshare.io/no-img-open-source.png' alt='C lang'/> [C lang](http://en.wikipedia.org/wiki/C_(programming_language)) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/1101/C9QJ7V3X.png' alt='Bootstrap'/> [Bootstrap](http://getbootstrap.com/) – Front-End Frameworks
 - <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/2203/default_9058af6f02375a99f634f537d727e32df92ac262.png' alt='UglifyJS'/> [UglifyJS](http://lisperator.net/uglifyjs/) – Javascript Utilities & Libraries
+- <img width='25' height='25' src='https://img.stackshare.io/service/1048/perl.png' alt='Perl'/> [Perl](http://www.perl.org/) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/993/pUBY5pVj.png' alt='Python'/> [Python](https://www.python.org) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/989/ruby.png' alt='Ruby'/> [Ruby](https://www.ruby-lang.org) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png' alt='SQL'/> [SQL](https://en.wikipedia.org/wiki/SQL) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/2595/capybara.png' alt='Capybara'/> [Capybara](http://jnicklas.github.io/capybara/) – Testing Frameworks
-- <img width='25' height='25' src='https://img.stackshare.io/service/2643/rubocop.png' alt='RuboCop'/> [RuboCop](http://batsov.com/rubocop/) – Code Review
-- <img width='25' height='25' src='https://img.stackshare.io/service/2988/4e77LXIo_400x400.png' alt='Bundler'/> [Bundler](http://bundler.io) – Front End Package Manager
+- <img width='25' height='25' src='https://img.stackshare.io/service/1101/C9QJ7V3X.png' alt='Bootstrap'/> [Bootstrap](http://getbootstrap.com/) – Front-End Frameworks
+- <img width='25' height='25' src='https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg' alt='jQuery'/> [jQuery](http://jquery.com/) – Javascript UI Libraries
 - <img width='25' height='25' src='https://img.stackshare.io/service/3820/12972006.png' alt='GraphQL'/> [GraphQL](http://graphql.org/) – Query Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png' alt='Shell'/> [Shell](https://en.wikipedia.org/wiki/Shell_script) – Shells
-- <img width='25' height='25' src='https://img.stackshare.io/service/6577/7b894961369b7c73e2a32f11f845e049_400x400.png' alt='Brakeman'/> [Brakeman](http://brakemanscanner.org/) – Code Review
 - <img width='25' height='25' src='https://img.stackshare.io/service/7879/GraphiQL.png' alt='GraphiQL'/> [GraphiQL](https://github.com/graphql/graphiql) – Database Tools
+- <img width='25' height='25' src='https://img.stackshare.io/service/1025/logo-mysql-170x170.png' alt='MySQL'/> [MySQL](http://www.mysql.com) – Databases
+- <img width='25' height='25' src='https://img.stackshare.io/service/6577/7b894961369b7c73e2a32f11f845e049_400x400.png' alt='Brakeman'/> [Brakeman](http://brakemanscanner.org/) – Code Review
+- <img width='25' height='25' src='https://img.stackshare.io/service/2988/4e77LXIo_400x400.png' alt='Bundler'/> [Bundler](http://bundler.io) – Front End Package Manager
+- <img width='25' height='25' src='https://img.stackshare.io/service/2595/capybara.png' alt='Capybara'/> [Capybara](http://jnicklas.github.io/capybara/) – Testing Frameworks
 - <img width='25' height='25' src='https://img.stackshare.io/service/11563/actions.png' alt='GitHub Actions'/> [GitHub Actions](https://github.com/features/actions) – Continuous Integration
+- <img width='25' height='25' src='https://img.stackshare.io/service/1052/YMxUfyWf.png' alt='NGINX'/> [NGINX](http://nginx.org) – Web Servers
+- <img width='25' height='25' src='https://img.stackshare.io/service/103/default_193410db3a7e419c7b436961bf41d733c7346b59.png' alt='New Relic'/> [New Relic](http://newrelic.com) – Performance Monitoring
+- <img width='25' height='25' src='https://img.stackshare.io/service/2643/rubocop.png' alt='RuboCop'/> [RuboCop](http://batsov.com/rubocop/) – Code Review
+- <img width='25' height='25' src='https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png' alt='Shell'/> [Shell](https://en.wikipedia.org/wiki/Shell_script) – Shells
+- <img width='25' height='25' src='https://img.stackshare.io/service/2203/default_9058af6f02375a99f634f537d727e32df92ac262.png' alt='UglifyJS'/> [UglifyJS](http://lisperator.net/uglifyjs/) – Javascript Utilities & Libraries
 
 Full tech stack [here](/techstack.md)
 
@@ -62,7 +62,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [JoeCohen/mushroom-observer](https://github.com/JoeCohen/mushroom-observer)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|62<br/>Tools used|01/05/24 <br/>Report generated|
+|69<br/>Tools used|03/21/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -278,9 +278,9 @@ Full tech stack [here](/techstack.md)
 </table>
 
 
-## <img src='https://img.stackshare.io/group.svg' /> Open source packages (39)</h2>
+## <img src='https://img.stackshare.io/group.svg' /> Open source packages (46)</h2>
 
-## <img width='24' height='24' src='https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg'/> RubyGems (39)
+## <img width='24' height='24' src='https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg'/> RubyGems (46)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
@@ -296,21 +296,26 @@ Full tech stack [here](/techstack.md)
 |[blankslate](https://rubygems.org/blankslate)|v3.1.3|08/14/20|Joe Cohen |MIT|N/A|
 |[bootstrap-sass](https://rubygems.org/bootstrap-sass)|v3.4.1|03/09/22|Jason |MIT|N/A|
 |[browser](https://rubygems.org/browser)|v5.3.1|01/18/22|andrew nimmo |MIT|N/A|
+|[bullet](https://rubygems.org/bullet)|v7.0.7|03/09/22|Jason |MIT|N/A|
 |[coffee-rails](https://rubygems.org/coffee-rails)|v5.0.0|01/03/23|Joe Cohen |MIT|N/A|
+|[date](https://rubygems.org/date)|v3.3.3|01/03/23|Joe Cohen |BSD-2-Clause|N/A|
+|[graphql-batch](https://rubygems.org/graphql-batch)|v0.5.2|01/03/23|Joe Cohen |MIT|N/A|
 |[i18n](https://rubygems.org/i18n)|v1.12.0|08/14/20|Joe Cohen |MIT|N/A|
 |[jbuilder](https://rubygems.org/jbuilder)|v2.11.5|01/03/23|Joe Cohen |MIT|N/A|
 |[jquery-rails](https://rubygems.org/jquery-rails)|v4.5.1|01/03/23|Joe Cohen |MIT|N/A|
 |[loofah](https://rubygems.org/loofah)|v2.19.1|12/15/22|andrew nimmo |MIT|N/A|
 |[mail](https://rubygems.org/mail)|v2.8.1|10/07/22|andrew nimmo |MIT|N/A|
 |[mimemagic](https://rubygems.org/mimemagic)|v0.4.3|08/14/20|Joe Cohen |MIT|N/A|
+|[mini_racer](https://rubygems.org/mini_racer)|v0.6.3|03/09/22|Jason |MIT|N/A|
 |[minitest](https://rubygems.org/minitest)|v5.17.0|12/09/22|andrew nimmo |MIT|N/A|
 |[minitest-reporters](https://rubygems.org/minitest-reporters)|v1.6.0|12/09/22|andrew nimmo |MIT|N/A|
 |[mocha](https://rubygems.org/mocha)|v2.0.2|03/09/22|Jason |MIT,BSD-2-Clause|N/A|
 |[mysql2](https://rubygems.org/mysql2)|v0.5.5|08/14/20|Joe Cohen |MIT|N/A|
 |[newrelic_rpm](https://rubygems.org/newrelic_rpm)|v9.0.0|12/19/22|JoeCohen |Apache-2.0|N/A|
-|[nokogiri](https://rubygems.org/nokogiri)|v1.14.2|12/12/22|andrew nimmo |MIT|[](https://github.com/advisories/GHSA-pxvg-2qj5-37jq) (Moderate)|
+|[nokogiri](https://rubygems.org/nokogiri)|v1.14.2|12/12/22|andrew nimmo |MIT|[](https://github.com/advisories/GHSA-vcc3-rw6f-jv97) (Moderate)<br/>[](https://github.com/advisories/GHSA-xc9x-jj77-9p9j) (Moderate)<br/>[](https://github.com/advisories/GHSA-pxvg-2qj5-37jq) (Moderate)|
 |[rack-cors](https://rubygems.org/rack-cors)|v2.0.0|01/29/22|andrew nimmo |MIT|N/A|
 |[rails-controller-testing](https://rubygems.org/rails-controller-testing)|v1.0.5|01/03/23|Joe Cohen |MIT|N/A|
+|[rails-html-sanitizer](https://rubygems.org/rails-html-sanitizer)|v1.5.0|01/03/23|Joe Cohen |MIT|N/A|
 |[railties](https://rubygems.org/railties)|v6.1.7|01/03/23|Joe Cohen |MIT|N/A|
 |[rubocop-performance](https://rubygems.org/rubocop-performance)|v1.16.0|01/03/23|Joe Cohen |MIT|N/A|
 |[rubocop-rails](https://rubygems.org/rubocop-rails)|v2.18.0|01/03/23|Joe Cohen |MIT|N/A|
@@ -321,8 +326,10 @@ Full tech stack [here](/techstack.md)
 |[sprockets-rails](https://rubygems.org/sprockets-rails)|v3.4.2|01/03/23|Joe Cohen |MIT|N/A|
 |[uglifier](https://rubygems.org/uglifier)|v4.2.0|08/14/20|Joe Cohen |MIT|N/A|
 |[unicorn](https://rubygems.org/unicorn)|v6.1.0|11/24/22|Jason Hollinger |GPL-2.0+,Ruby|N/A|
+|[web-console](https://rubygems.org/web-console)|v4.2.0|07/12/22|Joseph D. Cohen |MIT|N/A|
 |[webdrivers](https://rubygems.org/webdrivers)|v5.2.0|12/09/22|andrew nimmo |MIT|N/A|
 |[webmock](https://rubygems.org/webmock)|v3.18.1|03/09/22|Jason |MIT|N/A|
+|[xmlrpc](https://rubygems.org/xmlrpc)|v0.3.2|08/14/20|Joe Cohen |Ruby|N/A|
 
 <br/>
 <div align='center'>
